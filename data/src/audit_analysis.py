@@ -79,10 +79,10 @@ def summarize_failure_types(df):
     failures = df[df["failure_type"] != "None"]
 
     return (
-        failures["failure_type"]
-        .value_counts()
-        .reset_index()
-        .rename(columns={"index": "failure_type", "failure_type": "count"})
+        failures.groupby("failure_type")
+        .size()
+        .reset_index(name="count")
+        .sort_values(by="count", ascending=False)
     )
 
 
