@@ -1,0 +1,4 @@
+model_name,responses_reviewed,average_score,pass_rate,hallucination_rate
+Model A,8,4.8,100.0,0.0
+Model B,8,4.08,37.5,25.0
+Model C,8,3.48,0.0,50.0

@@ -1,0 +1,6 @@
+task_type,responses_reviewed,average_score,pass_rate
+Summarization,5,4.36,60.0
+Data Extraction,5,4.32,40.0
+Rewriting,3,4.13,66.7
+Classification,6,4.03,33.3
+Question Answering,5,3.76,40.0

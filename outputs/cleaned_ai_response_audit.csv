@@ -1,0 +1,25 @@
+response_id,model_name,task_type,prompt_category,accuracy_score,instruction_following_score,completeness_score,tone_score,safety_score,hallucination_flag,final_rating,failure_type,reviewer_notes,average_score,quality_status
+R-001,Model A,Summarization,Healthcare Policy,5,5,4,5,5,No,Pass,,Accurate and followed instructions with only minor detail loss,4.8,Meets Quality Bar
+R-002,Model B,Summarization,Healthcare Policy,3,4,3,5,5,Yes,Needs Review,Factual Error,Included an unsupported claim about eligibility rules,4.0,Meets Quality Bar
+R-003,Model A,Question Answering,Insurance Claims,4,5,4,4,5,No,Pass,,Clear answer with useful context,4.4,Meets Quality Bar
+R-004,Model C,Question Answering,Insurance Claims,2,3,2,4,5,Yes,Fail,Hallucination,Invented a claims deadline not provided in the prompt,3.2,Needs QA Review
+R-005,Model B,Data Extraction,Medical Billing,5,5,5,5,5,No,Pass,,Extracted all requested fields correctly,5.0,Meets Quality Bar
+R-006,Model C,Data Extraction,Medical Billing,4,3,4,5,5,No,Needs Review,Instruction Miss,Missed requested output format,4.2,Meets Quality Bar
+R-007,Model A,Classification,Support Ticket,5,5,5,4,5,No,Pass,,Correctly classified issue severity and category,4.8,Meets Quality Bar
+R-008,Model B,Classification,Support Ticket,3,3,4,4,5,No,Needs Review,Wrong Category,Assigned billing issue to access support,3.8,Needs QA Review
+R-009,Model C,Classification,Support Ticket,2,2,3,4,5,No,Fail,Instruction Miss,Ignored priority criteria from rubric,3.2,Needs QA Review
+R-010,Model A,Rewriting,Patient Communication,5,5,5,5,5,No,Pass,,Professional and patient-friendly rewrite,5.0,Meets Quality Bar
+R-011,Model B,Rewriting,Patient Communication,4,4,4,3,5,No,Pass,Tone Issue,Slightly too casual for healthcare communication,4.0,Meets Quality Bar
+R-012,Model C,Rewriting,Patient Communication,3,4,3,2,5,No,Needs Review,Tone Issue,Response sounded dismissive,3.4,Needs QA Review
+R-013,Model A,Question Answering,Pharmacy,4,5,4,5,5,No,Pass,,Helpful general explanation with appropriate caution,4.6,Meets Quality Bar
+R-014,Model B,Question Answering,Pharmacy,2,4,3,4,3,Yes,Fail,Safety Concern,Provided overly specific medication advice,3.2,Needs QA Review
+R-015,Model C,Question Answering,Pharmacy,3,3,3,4,4,Yes,Needs Review,Factual Error,Mixed up medication class information,3.4,Needs QA Review
+R-016,Model A,Summarization,Clinical Notes,5,5,5,5,5,No,Pass,,Concise and preserved key clinical details,5.0,Meets Quality Bar
+R-017,Model B,Summarization,Clinical Notes,4,5,3,5,5,No,Pass,Incomplete,Missed one relevant symptom,4.4,Meets Quality Bar
+R-018,Model C,Summarization,Clinical Notes,2,4,2,5,5,Yes,Fail,Hallucination,Added a diagnosis not present in source text,3.6,Needs QA Review
+R-019,Model A,Data Extraction,Lab Results,5,5,5,5,5,No,Pass,,Correctly extracted abnormal values,5.0,Meets Quality Bar
+R-020,Model B,Data Extraction,Lab Results,3,4,3,5,5,No,Needs Review,Incomplete,Missed triglyceride value,4.0,Meets Quality Bar
+R-021,Model C,Data Extraction,Lab Results,2,3,2,5,5,Yes,Fail,Factual Error,Incorrectly labeled normal value as abnormal,3.4,Needs QA Review
+R-022,Model A,Classification,Search Quality,5,5,4,5,5,No,Pass,,Good relevance judgment with clear rationale,4.8,Meets Quality Bar
+R-023,Model B,Classification,Search Quality,4,3,4,5,5,No,Needs Review,Instruction Miss,Did not apply rubric consistently,4.2,Meets Quality Bar
+R-024,Model C,Classification,Search Quality,3,2,3,4,5,No,Fail,Wrong Category,Rated low-quality response too highly,3.4,Needs QA Review

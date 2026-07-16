@@ -1,0 +1,8 @@
+failure_type,count
+Factual Error,3
+Instruction Miss,3
+Hallucination,2
+Incomplete,2
+Tone Issue,2
+Wrong Category,2
+Safety Concern,1
